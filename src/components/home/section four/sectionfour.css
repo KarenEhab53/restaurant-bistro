@@ -1,0 +1,92 @@
+:root {
+    --grey-color:#474747;
+    --off-white-color:#F9F9F7;
+--text-color:#2C2F24;
+--light-gray-color:#DBDFD0;
+--red-color:#AD343E;
+--blue-black-color:#182226;
+--white-color:#FFFFFF;
+--light-text-color:#414536;
+}
+.section-four{
+    max-width: 100%;
+    min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.section-four h1{
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.section-four .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.section-four .cards .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.section-four .cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    transition: all 0.5s ease-in-out;
+    gap: 10px;
+
+}
+
+.section-four .cards .card p{
+    font-size: 14px;
+    color: var(--text-color);
+}
+.section-four .cards .card h4{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.section-four .cards .card:hover{
+    background-color: var(--light-gray-color);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+}
+@media screen and (min-width: 426px) {
+    .section-four .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .section-four h1{
+        font-size: 42px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+.section-four{
+    padding: 10px;
+}
+    .section-four .cards{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .section-four{
+        padding: 100px;
+    }
+}

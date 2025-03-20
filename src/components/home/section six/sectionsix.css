@@ -1,0 +1,101 @@
+:root {
+    --grey-color:#474747;
+    --off-white-color:#F9F9F7;
+--text-color:#2C2F24;
+--light-gray-color:#DBDFD0;
+--red-color:#AD343E;
+--blue-black-color:#182226;
+--white-color:#FFFFFF;
+--light-text-color:#414536;
+}
+.section-six{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    gap: 10px;
+
+}
+
+.section-six h1{
+    font-size: 24px;
+    color: var(--text-color);
+}
+.section-six .cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-six .cards .card{
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F9F9F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 10px;
+    text-transform: capitalize;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.section-six .cards .card:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.section-six .cards .card .review h3{
+color: var(--red-color);
+}
+
+.section-six .cards .card .review p{
+color: #414536;
+    font-size: 12px;
+}
+.section-six .cards .card .line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-gray-color);
+}
+
+.section-six .cards .card .customer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.section-six .cards .card .customer img{
+    width: 50px;
+}
+@media screen and (min-width: 769px) {
+    .section-six .cards{
+        flex-direction: row;
+
+    }
+    .section-six .cards .card{
+        width: 230px;
+        height: 300px;
+            }
+            .section-six h1{
+                font-size: 32px;
+            }
+}
+
+@media screen and (min-width:1200px){
+    .section-six .cards .card{
+width: 400px;
+height: 250px;
+    }
+    .section-six .cards h3{
+        font-size: 20px;
+    }
+    .section-six .cards .card .review p{
+        font-size: 14px;
+        
+    }
+}

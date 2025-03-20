@@ -1,0 +1,60 @@
+:root {
+    --grey-color:#474747;
+    --off-white-color:#F9F9F7;
+--text-color:#2C2F24;
+--light-gray-color:#DBDFD0;
+--red-color:#AD343E;
+--blue-black-color:#182226;
+--white-color:#FFFFFF;
+--light-text-color:#414536;
+}
+.contact-info{
+   width: 100%;
+    height: 30px;
+background-color: var(--grey-color);
+display: flex;
+justify-content: space-between;
+padding: 10px 20px;
+align-items: center;
+position: fixed;
+top: 0;
+z-index: 100;
+
+}
+.contact-info .contact
+, .contact-info .social-media ,
+  .contact-info .social-media button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--off-white-color);
+    justify-content: center;
+
+}
+
+.contact-info .contact span{
+    display: none;
+}
+
+.contact-info .contact p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+
+}
+@media screen and (min-width: 426px) {
+    .contact-info .contact span{
+        display: inline;
+    }
+    .contact-info .contact{
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 769px) {
+    .contact-info {
+padding: 0 50px;
+    }
+}

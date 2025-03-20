@@ -1,0 +1,108 @@
+:root {
+    --grey-color:#474747;
+    --off-white-color:#F9F9F7;
+--text-color:#2C2F24;
+--light-gray-color:#DBDFD0;
+--red-color:#AD343E;
+--blue-black-color:#182226;
+--white-color:#FFFFFF;
+--light-text-color:#414536;
+}
+.sectionthree{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--off-white-color);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.sectionthree .data{
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    align-items: start;
+}
+
+.sectionthree .data h1{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.sectionthree .data p{
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+}
+
+.sectionthree .data .buttons{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.sectionthree .data .buttons button{
+width: 100px;
+height: 100px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.sectionthree .data .buttons button h1{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.sectionthree .data .buttons button span{
+    font-size: 0.8rem;
+    color: var(--light-text-color);
+}
+
+.sectionthree .data .buttons button:hover{
+    background-color: var(--light-gray-color);
+}
+.sectionthree .data .buttons .single{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sectionthree .image img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+@media screen and (min-width: 376px) {
+    .sectionthree .image img{
+        width: 350px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+.sectionthree{
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sectionthree .data .buttons button{
+    width: 130px;
+    height: 130px;
+
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .sectionthree .image img{
+        width: 400px;
+        height: 450px;
+    }
+}

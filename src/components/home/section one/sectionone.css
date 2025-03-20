@@ -1,0 +1,90 @@
+.section-one {
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-one img {
+    width: 100%;
+    height: 100vh;
+    object-fit:fill;
+}
+
+.section-one .data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 500px;
+    height: 50%;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-one .data h1 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+}   
+
+.section-one .data p {
+    font-size: 12px;
+    color: var(--text-color);
+    
+}
+.section-one .data .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-one .data .buttons button{
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-one .data .buttons button:first-child{
+    border: 1px solid var(--red-color);
+    color: var(--text-color);
+    font-weight: bold;
+
+}
+.section-one .data .buttons button:first-child:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+.section-one .data .buttons button:last-child{
+    border: 1px solid var(--blue-black-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+.section-one .data .buttons button:last-child:hover{
+    background-color: var(--blue-black-color);
+    transition: all 0.3s ease-in-out;
+    color: var(--white-color);
+}
+@media screen and (min-width:426px) {
+    .section-one .data h1{
+        font-size: 3rem;
+    }
+    .section-one .data p{
+        font-size:0.8rem;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .section-one .data h1{
+        font-size: 4rem;
+    }
+    .section-one .data p{
+        font-size:1.1rem;
+    }
+}

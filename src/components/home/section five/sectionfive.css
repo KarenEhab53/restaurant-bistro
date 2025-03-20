@@ -1,0 +1,138 @@
+.section-five{
+    max-width:100% ;
+    min-height: 100vh;
+    background-color: var(--off-white-color);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+.section-five .photos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-five .photos img{
+    width: 250px;
+    height: 200px;
+}
+.section-five .photos .images{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.section-five .photos .images img{
+    width: 120px;
+    height: 100px;
+}
+
+.section-five .data{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-five .data .info{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.section-five .data h2{
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align:center;
+}
+
+.section-five .data p{
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.section-five .data span{
+    color: var(--white-color);
+font-size: 14px;
+    background-color: var(--red-color);
+    padding: 7px;
+    border-radius: 50%;
+    text-align: center;
+}
+@media screen and (min-width: 426px) {
+    .section-five{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .section-five .data{
+        align-items: flex-start;
+    }
+    .section-five .data h2{
+        font-size: 28px;
+        text-align: start;
+    }
+    .section-five .data p{
+        font-size: 16px;
+        text-align: start;
+    }
+    .section-five .data span{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .section-five .images{
+        flex-direction: column;
+    }
+    .section-five .photos{
+        flex-direction: row;
+        gap: 5px;
+
+    }
+    .section-five .photos img{
+        width: 250px;
+        height: 350px;
+    }
+    .section-five .images{
+        padding-top: 20px;
+    }
+    .section-five .photos .images img:first-child{
+        width: 150px;
+        height: 200px;
+    }
+    .section-five .photos .images img:last-child{
+        width: 150px;
+        height: 150px
+    }
+    .section-five .data h2{
+        font-size: 42px;
+        text-align: start;
+    }
+    .section-five .data p{
+        font-size: 20px;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .section-five .photos img{
+        width: 350px;
+        height: 450px;
+    }
+
+    .section-five .photos .images img:first-child{
+        width: 250px;
+        height: 270px;
+    }
+    .section-five .photos .images img:last-child{
+        width: 250px;
+        height: 200px
+    }
+}
