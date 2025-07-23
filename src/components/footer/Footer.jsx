@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './footer.css';
 import { PiBowlFoodBold } from 'react-icons/pi';
 import img1 from '../../assets/pexels-steve-3789885 1.png'
 import img2 from '../../assets/eiliv-aceron-d5PbKQJ0Lu8-unsplash 1.png'
